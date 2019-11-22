@@ -11,3 +11,7 @@ while True:
         print('Число не должно быть однозначным\n')
     break
 print(nuber)
+
+b=10
+a=b
+print(a)
