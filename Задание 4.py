@@ -4,14 +4,14 @@
 Для решения используйте цикл while и арифметические операции.
 '''
 
-
 while True:
-    number = input('Введите число ')
-    if len(number) < 2:
-        print('Число не должно быть однозначным\n')
-    break
-print(nuber)
-
-b=10
-a=b
-print(a)
+    number = input('Введите положительное число')
+    if number == '':
+        print('Нормальное число введи!')
+    else:
+        break
+for i in range(len(number)): #пробегаемся по всей длине введенного пользователем числа и сравниваем его с предыдущим числом
+    if int(number[i]) < int(number[i+1]):
+        m = int(number[i])
+        i += 1
+        print(m)
