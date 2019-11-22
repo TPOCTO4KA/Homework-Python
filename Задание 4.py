@@ -5,13 +5,13 @@
 '''
 
 while True:
-    number = input('Введите положительное число')
+    number = input('Введите полож число, пустая строка - окончание \n')
     if number == '':
-        print('Нормальное число введи!')
-    else:
+        print('ну ты дурной')
         break
-for i in range(len(number)): #пробегаемся по всей длине введенного пользователем числа и сравниваем его с предыдущим числом
-    if int(number[i]) < int(number[i+1]):
-        m = int(number[i])
-        i += 1
+    else:
+        m = 0
+        for i in number:
+            if m < int(i):
+                m = int(i)
         print(m)
