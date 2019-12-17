@@ -7,3 +7,9 @@
 Структуру нужно сформировать программно, т.е. запрашивать все данные у пользователя.
 '''
 
+def salary_worker (money_hours, hours, bonus):
+    result == money_hours * hours + bonus
+    return result
+
+a = salary_worker(1, 1, 1)
+print(a)
