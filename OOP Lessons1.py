@@ -7,4 +7,23 @@
 
 Задачу можно усложнить, реализовав проверку порядка режимов, и при его нарушении выводить соответствующее сообщение и завершать скрипт.
 '''
+from time import sleep
 
+
+class TrafficLight:
+    __color = 'red'  # атрибут
+
+    def running(self):  # метод
+        dict = {
+            'red': 7,
+            'yellow': 2,
+            'green': 15
+        }
+        for key in dict.keys():
+            self.__color = key
+            sleep(dict[key])
+            print(self.__color)
+
+
+a = TrafficLight()  # а - объект
+a.running()
